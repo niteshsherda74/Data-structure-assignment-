@@ -1,0 +1,14 @@
+# Build artifacts
+pwmanager
+pwmanager.exe
+test_crypto
+test_crypto.exe
+
+# Generated vaults
+*.pmv
+*.pmv.tmp
+
+# Common temporary files
+*.o
+*.obj
+*.tmp
