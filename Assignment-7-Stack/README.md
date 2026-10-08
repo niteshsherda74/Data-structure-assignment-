@@ -1,9 +1,9 @@
-# Assignment 7 — Stack Implementation
+# Assignment 7 — Stack Implementation in C
 
 ## Aim
-Implement a stack and demonstrate its basic operations.
+Implement a stack and demonstrate its basic operations using the C language.
 
-## Concepts
+## Theory
 A stack is a linear data structure that follows **LIFO** (Last In, First Out). Insertion and deletion happen at the top.
 
 ## Operations
@@ -11,17 +11,13 @@ A stack is a linear data structure that follows **LIFO** (Last In, First Out). I
 - `pop()`: removes and reports the top element.
 - `peek()`: displays the top element without removing it.
 - `display()`: prints elements from top to bottom.
-- `isEmpty()` / `isFull()`: checks stack boundary conditions.
-
-## Implementation
-The stack is implemented using a fixed-size array of 100 integers. It checks overflow and underflow before modifying the stack.
+- `is_empty()` / `is_full()`: checks stack boundary conditions.
 
 ## Compile and run
 ```bash
-g++ -std=c++17 -Wall -Wextra -pedantic stack.cpp -o stack
+gcc -std=c11 -Wall -Wextra -pedantic stack.c -o stack
 ./stack
 ```
-
 On Windows, run `stack.exe` after compiling.
 
 ## Complexity
@@ -33,5 +29,4 @@ On Windows, run `stack.exe` after compiling.
 | Is empty / full | O(1) |
 | Display | O(n) |
 
-## Note
-This is a console-based implementation for learning purposes.
+The implementation uses a fixed-size array of 100 integers and checks overflow and underflow.
