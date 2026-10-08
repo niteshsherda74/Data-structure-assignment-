@@ -1,7 +1,7 @@
-# Assignment 9 — Job Queue Simulation Using Linear Queue
+# Assignment 9 — Job Queue Simulation Using Linear Queue in C
 
 ## Aim
-Simulate a job queue using a linear queue.
+Simulate a job queue using a linear queue in the C language.
 
 ## Theory
 A queue follows **FIFO** (First In, First Out): the first job added is the first job processed. This program stores jobs in a fixed-size array.
@@ -14,13 +14,12 @@ A queue follows **FIFO** (First In, First Out): the first job added is the first
 
 ## Compile and run
 ```bash
-g++ -std=c++17 -Wall -Wextra -pedantic job_queue.cpp -o job_queue
+gcc -std=c11 -Wall -Wextra -pedantic job_queue.c -o job_queue
 ./job_queue
 ```
-
 On Windows, run `job_queue.exe` after compiling.
 
-## Capacity
+## Capacity and limitation
 The queue can hold up to 5 pending jobs. Because this is a **linear** queue rather than a circular queue, freed positions at the start are not reused until the queue becomes empty.
 
 ## Complexity
